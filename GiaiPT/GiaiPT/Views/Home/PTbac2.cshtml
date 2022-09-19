@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Giải phương trình bậc 2";
+}
+
+<div >
+    <h1> @ViewData["Title"]</h1>
+
+</div>
+
+<form asp-action="PTbac2" class="form-check">
+    <label>He so a </label>
+    <input type="text" name="a" value="" />
+    <label>He so b: </label>
+    <input type="text" name="b" value="" />    
+    <label>He so c: </label>
+    <input type="text" name="c" value="" />
+
+    <input type="submit" class="btn btn-primary" name="name" value="Result" />
+</form>
+<br />
+<br />
+<h2>@ViewBag.Result</h2>
